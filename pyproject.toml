@@ -1,0 +1,18 @@
+[project]
+name = "FeatureSelection"
+version = "0.1.0"
+description = "implementations of various feature selection algorithms"
+requires-python = ">=3.11"
+dependencies = [
+    "cairosvg>=2.7.1",
+    "matplotlib>=3.10.1",
+    "notebook>=7.4.3",
+    "pip>=25.1.1",
+    "python-avatars>=1.4.1",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2",
+]
+[tool.pytest.ini_options]
+pythonpath = [
+    "."
+]
