@@ -53,7 +53,7 @@ BASE_PARAMS = [
         'params': {
         'estimator': LinearRegression(),
         'scoring': 'neg_mean_squared_error',
-        'n_splits': 3,
+        'cv': 3,
         },
         'data_generator': make_synthetic_regression_data,
         'data_type': 'regression'
@@ -63,7 +63,7 @@ BASE_PARAMS = [
         'params': {
         'estimator': DecisionTreeClassifier(random_state=42),
         'scoring': 'accuracy',
-        'n_splits': 3,
+        'cv': 3,
         },
         'data_generator': make_synthetic_classification_data,
         'data_type': 'classification'
